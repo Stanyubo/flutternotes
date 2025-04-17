@@ -284,8 +284,7 @@ class AnimationIndicator extends StatefulWidget {
   _AnimationIndicatorState createState() => _AnimationIndicatorState();
 }
 
-class _AnimationIndicatorState extends State<AnimationIndicator>
-    with SingleTickerProviderStateMixin {
+class _AnimationIndicatorState extends State<AnimationIndicator> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
 
   @override

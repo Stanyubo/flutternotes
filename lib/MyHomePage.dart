@@ -22,6 +22,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  List<String> titleList= [
+    "chapter2_flutter_home",
+    "chapter3_basic_component_home",
+    "chapter4_layout_home",
+    "chapter5_container_home",
+    "chapter6_scroll_homepage",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,18 +41,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "chapter2_flutter_home");
-                },
-                child: Text("chapter2_flutter_home")
-            ),
-            TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "chapter3_basic_component_home");
-                },
-                child: Text("chapter3_basic_component_home")
-            ),
+            for (int i = 0; i < titleList.length; ++i)
+              TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, titleList[i]);
+                  },
+                  child: Text(titleList[i])
+              ),
             const Text(
               'You have pushed the button this many times:',
             ),
