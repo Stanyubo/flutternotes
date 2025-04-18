@@ -10,6 +10,7 @@ import 'chapter3_basic_component/BasicComponentHome.dart';
 import 'chapter4_layout_component/LayoutHome.dart';
 import 'chapter5_container_component/ContainerHome.dart';
 import 'chapter6_scroll_component/ScrollHome.dart';
+import 'chapter7_function_component/FunctionalWidgetHome.dart';
 
 Map<String, WidgetBuilder> routeConfig = {
   "/": (context) => MyHomePage(title: 'Flutter Demo Home Page'),
@@ -23,4 +24,5 @@ Map<String, WidgetBuilder> routeConfig = {
   "chapter4_layout_home": (context) => LayoutHome(),
   "chapter5_container_home": (context) => ContainerHome(),
   "chapter6_scroll_homepage": (context) => ScrollHome(),
+  "chapter7_function_component": (context) => FunctionalWidgetHome(),
 };

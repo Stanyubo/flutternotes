@@ -30,7 +30,6 @@ class _ContainerHomeState extends State<ContainerHome> {
     containerWidget,
     // clipWidget,
     fittedBoxWidget,
-
   ];
 
   int currentIndex = 0;

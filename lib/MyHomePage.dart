@@ -14,8 +14,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  final String _returnValue = "";
-
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -28,6 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
     "chapter4_layout_home",
     "chapter5_container_home",
     "chapter6_scroll_homepage",
+    "chapter7_function_component"
   ];
 
   @override
