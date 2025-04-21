@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:p/CommonUI/CommonUIHome.dart';
 import '../CommonUI/ShareDataWidget.dart';
-import 'ProviderRouteDisplay.dart';
+import 'provider_route_display.dart';
 
 //  todo: 了解WillPopScope导航返回拦截
 

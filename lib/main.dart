@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'Error.dart';
-import 'RouteConfig.dart';
+import 'error.dart';
+import 'route_config.dart';
 
 void main() {
   runApp(const MyApp());

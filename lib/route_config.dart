@@ -1,17 +1,17 @@
 
 import 'package:flutter/cupertino.dart';
 
-import 'MyHomePage.dart';
-import 'chapter11_file_network/FileNetworkHome.dart';
-import 'chapter2/FlutterHome.dart';
-import 'chapter2/RouteManagement.dart';
-import 'chapter2/StateManagement.dart';
+import 'my_homepage.dart';
+import 'chapter11_file_network/file_network_home.dart';
+import 'chapter2/flutter_home.dart';
+import 'chapter2/route_management.dart';
+import 'chapter2/state_management.dart';
 
-import 'chapter3_basic_component/BasicComponentHome.dart';
-import 'chapter4_layout_component/LayoutHome.dart';
-import 'chapter5_container_component/ContainerHome.dart';
-import 'chapter6_scroll_component/ScrollHome.dart';
-import 'chapter7_function_component/FunctionalWidgetHome.dart';
+import 'chapter3_basic_component/basic_component_home.dart';
+import 'chapter4_layout_component/layout_home.dart';
+import 'chapter5_container_component/container_home.dart';
+import 'chapter6_scroll_component/scroll_home.dart';
+import 'chapter7_function_component/functional_widget_home.dart';
 
 Map<String, WidgetBuilder> routeConfig = {
   "/": (context) => MyHomePage(title: 'Flutter Demo Home Page'),

@@ -3,10 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:p/CommonUI/CommonUIHome.dart';
-import 'package:p/chapter6_scroll_component/TabBarDisplayPage.dart';
+import 'package:p/chapter6_scroll_component/tabbar_display_page.dart';
 
 import '../CommonUI/KeepAliveWrapper.dart';
-import 'NestedScrollViewDisplay.dart';
+import 'nested_scrollview_display.dart';
 
 // Flutter滚动组件主要由三个角色组成：Scrollable、Viewport 和 Sliver
 //通常SingleChildScrollView只应在期望的内容不会超过屏幕太多时使用
