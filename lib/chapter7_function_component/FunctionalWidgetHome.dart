@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:p/CommonUI/CommonUIHome.dart';
 import '../CommonUI/ShareDataWidget.dart';
 import 'ProviderRouteDisplay.dart';
 
@@ -33,14 +34,14 @@ class _FunctionalWidgetHomeState extends State<FunctionalWidgetHome> {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> titleWidgets = _titleWidgets();
     return Scaffold(
       appBar: AppBar(
         title: Text("FunctionalWidgetHome"),
       ),
       body: Column(
         children: [
-          ...titleWidgets,
+          TitleWidget(widgetTitleList: widgetTitleList, currentIndex: currentIndex),
+          DisplayWidget(),
           funcList[currentIndex](),
         ],
       ),
@@ -108,27 +109,6 @@ class _FunctionalWidgetHomeState extends State<FunctionalWidgetHome> {
 
   Widget _providerRouteDisplayPage() {
     return ProviderRouteDisplay();
-  }
-
-  List<Widget> _titleWidgets() {
-    return [
-      Wrap(
-        spacing: 8,
-        runSpacing: 8,
-        children: [
-          for (int i = 0; i < widgetTitleList.length; ++i)
-            OutlinedButton(
-                onPressed: () {
-                  setState(() {
-                    currentIndex = i;
-                  });
-                },
-                child: Text("${widgetTitleList[i]}")
-            ),
-        ],
-      ),
-      Text("\n\n   --------- 展示效果 -------\n\n"),
-    ];
   }
 
 }

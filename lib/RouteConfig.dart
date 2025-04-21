@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 
 import 'MyHomePage.dart';
+import 'chapter11_file_network/FileNetworkHome.dart';
 import 'chapter2/FlutterHome.dart';
 import 'chapter2/RouteManagement.dart';
 import 'chapter2/StateManagement.dart';
@@ -25,4 +26,5 @@ Map<String, WidgetBuilder> routeConfig = {
   "chapter5_container_home": (context) => ContainerHome(),
   "chapter6_scroll_homepage": (context) => ScrollHome(),
   "chapter7_function_component": (context) => FunctionalWidgetHome(),
+  "chapter11_file_network": (context) => FileNetworkHome(),
 };

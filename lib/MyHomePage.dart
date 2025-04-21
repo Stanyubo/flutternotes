@@ -26,7 +26,8 @@ class _MyHomePageState extends State<MyHomePage> {
     "chapter4_layout_home",
     "chapter5_container_home",
     "chapter6_scroll_homepage",
-    "chapter7_function_component"
+    "chapter7_function_component",
+    "chapter11_file_network",
   ];
 
   @override

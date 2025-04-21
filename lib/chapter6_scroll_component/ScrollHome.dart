@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:p/CommonUI/CommonUIHome.dart';
 import 'package:p/chapter6_scroll_component/TabBarDisplayPage.dart';
 
 import '../CommonUI/KeepAliveWrapper.dart';
@@ -45,14 +46,14 @@ class _ScrollHomeState extends State<ScrollHome> {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> titleWidgets = _titleWidgets();
     return Scaffold(
       appBar: AppBar(
         title: Text("ScrollHome"),
       ),
       body: Column(
         children: [
-          ...titleWidgets,
+          TitleWidget(widgetTitleList: widgetTitleList, currentIndex: currentIndex),
+          DisplayWidget(),
           funcList[currentIndex](),
         ],
       ),
@@ -109,27 +110,6 @@ class _ScrollHomeState extends State<ScrollHome> {
         },
         child: Text("go to TabBarDisplayPage")
     );
-  }
-
-  List<Widget> _titleWidgets() {
-    return [
-      Wrap(
-        spacing: 8,
-        runSpacing: 8,
-        children: [
-          for (int i = 0; i < widgetTitleList.length; ++i)
-            OutlinedButton(
-                onPressed: () {
-                  setState((){
-                    currentIndex = i;
-                  });
-                },
-                child: Text("${widgetTitleList[i]}")
-            ),
-        ],
-      ),
-      Text("\n\n   --------- 展示效果 -------\n\n"),
-    ];
   }
 
   Widget _pageViewWidget() {
