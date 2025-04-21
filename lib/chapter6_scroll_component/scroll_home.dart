@@ -2,10 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:p/CommonUI/CommonUIHome.dart';
-import 'package:p/chapter6_scroll_component/tabbar_display_page.dart';
+import 'package:flutter_notes/common_ui/common_ui_home.dart';
+import 'package:flutter_notes/chapter6_scroll_component/tabbar_display_page.dart';
 
-import '../CommonUI/KeepAliveWrapper.dart';
+import '../common_ui/keep_alive_wrapper.dart';
 import 'nested_scrollview_display.dart';
 
 // Flutter滚动组件主要由三个角色组成：Scrollable、Viewport 和 Sliver

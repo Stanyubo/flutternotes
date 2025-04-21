@@ -5,7 +5,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:p/chapter3_basic_component/switch_checkbox_component.dart';
+import 'package:flutter_notes/chapter3_basic_component/switch_checkbox_component.dart';
 
 import 'textfield_component.dart';
 

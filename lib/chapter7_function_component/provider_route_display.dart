@@ -4,8 +4,7 @@ import 'dart:collection';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../CommonUI/CustomProvider.dart';
-import '../CommonUI/CustomProvider.dart';
+import 'package:flutter_notes/common_ui/custom_provider.dart';
 
 class Item {
   Item(this.price, this.count);
